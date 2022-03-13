@@ -1,0 +1,546 @@
+/*Tags*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f0f0f0;
+}
+/*Menu*/
+.navbar-collapse{
+    display: flex;
+    justify-content: end;
+    margin: 0 50px;
+}
+.navbar-brand img{
+    width: 90px;
+    margin: 0 50px;
+}
+.position-fixed{
+    z-index: 99;
+    width: 100%;
+}
+
+/*Carousel*/
+#carouselExampleCaptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-inner{
+    margin-top: 100px;
+    width: 1650px;
+}
+.carousel-item{
+    position:relative;
+    top: 0;
+}
+.carousel-item .carousel-titulo-1{
+    color: rgb(35, 35, 35);
+    position: absolute;
+    bottom: 800px;
+    right: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.carousel-caption .titulo{
+    display:flex;
+    color: rgb(35, 35, 35);
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    bottom: 800px;
+    left: 60px;
+    position: absolute;
+}
+.carousel-caption .slogan{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(35, 35, 35);
+    position: absolute;
+    top: -100px;
+    left: 500px;
+}
+.card-pai{
+    display: flex;
+    margin: 30px 150px;
+    justify-content: center;
+    position: absolute;
+    top: -650px;
+    left: 300px;
+}
+.card-pai .card-1{
+    background: url('../img/modelo-1.webp');
+    background-size: 100%;
+    height: 400px;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid gray 1px;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+.card-pai .card-1:hover{
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.719);
+    transform: scale(1.1);
+}
+.card-pai .card-1 .card-text{
+    padding: 5px;
+    width: 85%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    position: absolute;
+    left: 21px;
+    bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.card-pai .card-2{
+    background: url('../img/modelo-2.webp');
+    background-size: 100%;
+    height: 400px;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid gray 1px;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+.card-pai .card-2:hover{
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.719);
+    transform: scale(1.1);
+}
+.card-pai .card-2 .card-text{
+    padding: 15px;
+    width: 85%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    position: absolute;
+    left: 21px;
+    bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.card-title{
+    width: 85%;
+    position: absolute;
+    top: 20px;
+    left: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.carousel-caption .descrição{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(35, 35, 35);
+    position: absolute;
+    bottom: 470px;
+    right: 500px;
+}
+.carousel-caption .sub-descrição{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(35, 35, 35);
+    position: absolute;
+    bottom: 320px;
+    right: 500px;
+}
+.carousel-caption .btn{
+    position: absolute;
+    bottom: 10px;
+    left: 85px;
+}
+.btn-mais{
+    -webkit-text-size-adjust: 100%;
+    -webkit-appearance: button;
+    box-sizing: border-box;
+    margin: 0;
+    position: absolute;
+    bottom: 200px;
+    left: 170px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #222;
+    width: 300px;
+    height: 60px;
+    border: gray 3px solid;
+    transition: all .3s ease-in-out;
+}
+.btn-mais:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*Vendas*/
+#container-vendas{
+    margin: 100px auto;
+    width: 100%;
+}
+#container-vendas ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+#container-vendas ul li{
+    width: 250px;
+    margin: 0 50px;
+    cursor: pointer;
+    transition: ease-in-out .3s all;
+}
+#container-vendas ul li:hover{
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.719);
+    transform: scale(1.1);
+}
+#container-vendas h2{
+    display: flex;
+    justify-content: center;
+}
+#container-vendas ul li .desconto{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 50px;
+    border: crimson 1px solid;
+    background-color: rgba(255, 255, 255, 0.999);
+    position: absolute;
+    top: 0px;
+}
+#container-vendas ul li a{
+    color: rgba(255, 0, 0, 0.637);
+    text-align: center;
+    text-decoration: none;
+}
+#container-vendas img{
+    margin:  0 11px;
+    width: 230px;
+}
+#container-vendas ul li a .detalhes{
+    width: 230px;
+    height: 70px;
+    color: rgb(35, 35, 35);
+    text-align: center;
+    font-size: 12pt;
+    text-transform: uppercase;
+    margin: 0 9px;
+}
+.preco-desconto-orignal{
+    display: flex;
+    justify-content: center;
+}
+#container-vendas ul li a .preco-desconto{
+    color: crimson;
+    font-size: 20pt;
+}
+#container-vendas ul li a .preco-original{
+    color: black;
+    font-size: 15pt;
+    text-decoration: line-through;
+}
+
+/*Sobre*/
+#container-about{
+    display: flex;
+    margin: 100px auto;
+    width: 1650px;
+    height: 600px;
+}
+#container-about .about-text{
+    width: 50%;
+    height: 100%;
+    padding-top: 50px;
+}
+#container-about .about-text h3{
+    color: rgb(35, 35, 35);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+#container-about .about-text .about-text-title{
+    color: rgb(35, 35, 35);
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+} 
+#container-about .about-text .about-text-information{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(35, 35, 35);
+    font-size: 15pt;
+    padding: 15px;
+}
+#container-about .about-img{
+    width: 50%;
+    height: 100%;
+}
+#container-about .about-img img{
+    width: 99%;
+    height: 600px;
+}
+
+/*Footer*/
+.rodape{
+    width: 100%;
+    position: relative;
+    background-color: rgb(35, 35, 35);
+    height: 100%;
+    text-transform: uppercase;
+}
+.rodape-redesocial{
+    display: flex;
+    justify-content: center;
+}
+.rodape h2{
+    display: flex;
+    justify-content: center;
+    font-size: 15pt;
+    margin: 5px;
+    color: white;
+}
+.rodape-redesocial img{
+    width: 50px;
+    margin: 10px;
+    filter: grayscale(100);
+    transition: ease-in-out .3s all;
+    cursor: pointer;
+}
+.rodape-redesocial img:hover{
+    filter: grayscale(0);
+}
+.pagamento{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pagamento h2{
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+}
+.pagamento-img img{
+    width: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.baixar{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.baixar h2{
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+}
+.baixar-img img{
+    width: 150px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+section{
+    background-color: #fff;
+    margin: 0 auto;
+    width: 60vw;
+    position: relative;
+    top: 100px;
+}
+.img-vestido img{
+    margin: 50px 100px;
+    width: 550px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.719);
+}
+.comprar{
+    width: 400px;
+    position: absolute;
+    top: 75px;
+    right: 50px;
+    padding: 25px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.719);
+    border-radius: 25px;
+}
+.preco-atual-original{
+    display: flex;
+    justify-content: center;
+}
+.preco-atual{
+    color: crimson;
+    font-size: 20pt;
+}
+.preco-original{
+    color: black;
+    font-size: 15pt;
+    text-decoration: line-through;
+}
+.parcela{
+    display: flex;
+    font-weight: 600;
+    font-size: 13pt;
+}
+.preco-parcela{
+    margin: 0 4px;
+    color: #00a650;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.entrega .titulo{
+    color: rgb(35, 35, 35);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.entrega .preco-parcela{
+    color: #00a650;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
+    margin: 40px 0;   
+}
+.comprar .button{
+    width: 300px;
+    height: 60px;
+    color: rgb(35, 35, 35);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    text-transform: uppercase;
+    margin: 30px 25px;
+    background-color: rgba(255, 255, 255, 0.999);
+    transition: all .2s ease-in-out;
+}
+.comprar .button:hover{
+    background-color: #ffc107;
+}
+.comprar .pagamentos h2{
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+}
+.comprar .pagamentos-img img{
+    text-align: center;
+    width: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.caracteristicas{
+    width: 750px;
+    height: 550px;
+    border-right: 1px gray solid;
+}
+.caracteristicas h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20pt;
+}
+.caracteristicas .marca{
+    display: flex;
+    margin: 0 40px ;
+}
+.caracteristicas .marca p{
+    padding: 10px 40px;
+    background-color: rgb(175, 175, 175);
+    font-family: 'Poppins', sans-serif;
+}
+.outras-caracteristicas{
+    margin: 0 40px ;
+}
+.descricao p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13pt;
+    margin: 10px 40px;
+}
+
+.contato{
+    width: 770px;
+    height: 80vh;
+    margin: 0 auto;
+    position: relative;
+    top: 120px;
+    background-color: #fff;
+    padding: 50px;
+}
+.contato h1{
+    text-align: center;
+    padding: 50px 0;
+}
+.contato label{
+    font-size: 15pt;
+    font-family: 'Poppins', sans-serif;
+}
+.contato .btn{
+    position: absolute;
+    right: 50px;
+}
+
+.login{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px;
+}
+.login h1{
+    text-align: center;
+    padding: 50px 0;
+}
+.login label{
+    font-size: 15pt;
+    font-family: 'Poppins', sans-serif;
+}
+.login .btn{
+    width: 150px;
+    position: absolute;
+    right: 180px;
+    background-color: #ffc107;
+}
+
+.cadastro{
+    width: 500px;
+    height: 700px;
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px;
+}
+.cadastro h1{
+    text-align: center;
+    padding: 50px 0;
+}
+.cadastro label{
+    font-size: 15pt;
+    font-family: 'Poppins', sans-serif;
+}
+.cadastro .btn{
+    width: 150px;
+    position: absolute;
+    right: 180px;
+    background-color: #ffc107;
+}
